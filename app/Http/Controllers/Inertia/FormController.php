@@ -3,11 +3,10 @@
 namespace App\Http\Controllers\Inertia;
 
 use App\Http\Controllers\Controller;
-
 use Illuminate\Http\Request;
-use Inertia\Inertia;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
+use Inertia\Inertia;
 
 class FormController extends Controller
 {

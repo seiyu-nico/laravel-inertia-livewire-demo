@@ -1,6 +1,6 @@
 <script setup>
 import { ref, watch, computed } from "vue";
-import { useForm } from "@inertiajs/inertia-vue3";
+import { useForm } from "@inertiajs/vue3";
 
 // データの受け渡し
 const props = defineProps({
