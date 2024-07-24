@@ -2,6 +2,7 @@
 
 use App\Http\Middleware\HandleInertiaRequests;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Inertia\FormController;
 use Inertia\Inertia;
 
 Route::middleware([HandleInertiaRequests::class])->group(function () {
@@ -10,4 +11,7 @@ Route::middleware([HandleInertiaRequests::class])->group(function () {
             'count' => 0,
         ]);
     });
+
+    Route::get('/form', [FormController::class, 'create'])->name('form.create');
+    Route::post('/form', [FormController::class, 'store'])->name('form.store');
 });
