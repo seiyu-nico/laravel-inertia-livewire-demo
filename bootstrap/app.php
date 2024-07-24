@@ -14,6 +14,10 @@ return Application::configure(basePath: dirname(__DIR__))
                 ->prefix('livewire')
                 ->name('livewire.')
                 ->group(base_path('routes/livewire.php'));
+            Route::middleware('web')
+                ->prefix('inertia')
+                ->name('inertia.')
+                ->group(base_path('routes/inertia.php'));
         },
     )
     ->withMiddleware(function (Middleware $middleware) {
