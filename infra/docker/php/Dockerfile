@@ -43,13 +43,13 @@ ENV UID ${UID}
 ENV GID ${GID}
 ENV USER dev
 
-
 RUN groupadd --force -g ${GID} ${USER} && \
     useradd -ms /bin/bash --no-user-group -u ${UID} -g ${GID} ${USER} && \
     mkdir /composer && \
     chown -R ${USER}:${USER} /src && \
     chown -R ${USER}:${USER} /composer && \
     chmod +x /entrypoint.sh
+ENTRYPOINT [ "/entrypoint.sh" ]
 
 FROM base as prod
 
