@@ -8,7 +8,7 @@
     },
     "devDependencies": {
         "@inertiajs/inertia": "^0.11.1",
-        "@inertiajs/vue3": "^1.2.0",
+        "@inertiajs/vue3": "^2.0.12",
         "@vitejs/plugin-vue": "^5.2.3",
         "axios": "^1.8.4",
         "laravel-vite-plugin": "^1.2",
